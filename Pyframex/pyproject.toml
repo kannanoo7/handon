@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyframex"
+version = "0.1.0"
+description = "A minimal educational Python framework"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Your Name", email = "you@email.com" }
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "uvicorn"]
+
+[tool.setuptools.packages.find]
+where = ["."]
